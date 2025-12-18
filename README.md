@@ -1,216 +1,157 @@
-# Open Data - Travaux Pratiques et Projets
+# 📊 Open Data - Travaux Pratiques & Projet en Équipe
 
-Dépôt central regroupant tous les travaux pratiques et projets réalisés pour le matière **Open Data** à l'IPSSI Paris.
-
-## 📋 Structure du Projet
-```
-Open_Data/
-├── tp1-exploration/              # TP1 - Exploration de données
-│   ├── exploration.ipynb         # Notebook d'analyse
-│   ├── FICHE_TECHNIQUE.md        # Documentation technique
-│   └── README.md
-│
-├── tp2-pipeline-bis/             # TP2 - Pipeline d'acquisition et transformation
-│   ├── pipeline/                 # Code modulaire (fetchers, enricher, etc.)
-│   ├── tests/                    # Tests unitaires (9/9 PASSED)
-│   ├── data/                     # Données (raw, processed, reports)
-│   ├── exploration.ipynb         # Notebook de démonstration
-│   ├── README.md                 # Documentation
-│   └── pyproject.toml            # Configuration projet
-│
-├── tp3-app/                      # TP3 - Application Data Interactive avec Chatbot
-│   ├── app_streamlit.py          # Application Streamlit principale
-│   ├── utils/                    # Modules (data, charts, chatbot)
-│   ├── data/processed/           # Données Parquet du TP2
-│   ├── README.md                 # Documentation
-│   ├── screen_page_*.jpg         # Screenshots de démonstration
-│   └── pyproject.toml            # Configuration projet
-│
-└── README.md                     # Cette documentation
-```
-
-## 📚 Travaux Pratiques
-
-### **TP1 - Exploration de Données Open Data** ✅
-**Durée** : 1h30  
-**Objectif** : Explorer et documenter un dataset Open Data avec assistance IA
-
-**Dataset** : Accidents corporels de la circulation routière (data.gouv.fr)
-- 439k lignes, 36 colonnes
-- Données de 2005 à 2022
-
-**Livrables** :
-- `exploration.ipynb` : Notebook avec 8 questions explorées
-- `FICHE_TECHNIQUE.md` : Documentation auto-générée
-
-**Points clés** :
-- ✅ Chargement de données (gestion encodage, séparateurs)
-- ✅ Analyse exploratoire avec assistance IA
-- ✅ Documentation professionnelle
-
-**Accès** : [TP1 Folder](./tp1-exploration/)
+Parcours complet d'apprentissage en Data Engineering, Visualisation et IA appliqués à l'Open Data français.
 
 ---
 
-### **TP2 - Pipeline d'Acquisition et Transformation de Données** ✅
-**Durée** : 5h  
-**Objectif** : Construire un pipeline de production pour l'acquisition, enrichissement et analyse de données
-
-**APIs utilisées** :
-- **OpenMeteo** : Données météo en temps réel
-- **API Adresse** : Géocodage et enrichissement (Base Adresse Nationale)
-
-**Résultats** :
-- ✅ 3 villes analysées (Paris, Lyon, Marseille)
-- ✅ Qualité globale : **A** (100% complétude)
-- ✅ Score géocodage moyen : **0.967**
-- ✅ Tests : **9/9 PASSED**
-
-**Architecture** :
+## 🎓 Progression Pédagogique
 ```
-Données météo (OpenMeteo)
-        ↓
-Enrichissement (Géocodage API Adresse)
-        ↓
-Transformation et nettoyage
-        ↓
-Analyse de qualité
-        ↓
-Stockage Parquet + Rapports
+TP1: Exploration         TP2: Pipeline          TP3: Dashboard       PROJET: SafeCity
+    ↓                       ↓                       ↓                     ↓
+Découvrir les données → Acquérir & transformer → Visualiser          → Application complète
+439k lignes             + Enrichir               + Chatbot IA
+Accidents routiers      + Tester (9/9 ✅)       3 villes             101 depts, 18 crimes
 ```
-
-**Modules implémentés** :
-- `pipeline/config.py` - Configuration centralisée
-- `pipeline/fetchers/` - Acquisition multi-sources
-- `pipeline/enricher.py` - Enrichissement croisé
-- `pipeline/transformer.py` - Transformation fluide
-- `pipeline/quality.py` - Scoring automatique
-- `pipeline/storage.py` - Stockage Parquet
-- `tests/` - Tests unitaires (pytest)
-
-**Accès** : [TP2 Folder](./tp2-pipeline-bis/)
 
 ---
 
-### **TP3 - Application Data Interactive avec Chatbot** ✅
-**Durée** : 2h25  
-**Objectif** : Créer une application interactive pour explorer les données avec visualisations et chatbot IA
+## 📁 Structure
 
-**Fonctionnalités** :
-- ✅ Chargement des données Parquet du TP2
-- ✅ Filtres dynamiques par colonne
-- ✅ Visualisations interactives (Plotly)
-- ✅ Chatbot IA (Claude Sonnet 4.5) intégré
-- ✅ Affichage des données brutes
-
-**Architecture** :
-```
-Streamlit Application
-    ├── Data Module (chargement Parquet)
-    ├── Charts Module (visualisations Plotly)
-    ├── Chatbot Module (Claude Sonnet 4.5)
-    └── Utils (filtrage, agrégation)
-```
-
-**Technologies** :
-- **Streamlit** : Framework pour applications data
-- **Plotly** : Visualisations interactives
-- **Claude Sonnet 4.5** : Chatbot IA
-- **DuckDB** : Requêtes SQL optimisées
-
-**Résultats** :
-- ✅ Application fonctionnelle et intuitive
-- ✅ Chatbot répond à des questions complexes
-- ✅ Visualisations interactives et informatives
-- ✅ Score de géocodage moyen : 0.967
-
-**Accès** : [TP3 Folder](./tp3-app/)
+| Dossier | Objectif | Stack |
+|---------|----------|-------|
+| **tp1-exploration/** | Comprendre les Open Data | Jupyter, Pandas |
+| **tp2-pipeline-bis/** | Pipeline production-ready | Python, APIs, Pytest |
+| **tp3-app/** | Dashboard interactif avec IA | Streamlit, Plotly, Claude |
+| **safecity-app/** | Application en équipe (3 personnes) | Full stack |
 
 ---
 
 ## 🚀 Démarrage Rapide
 
-### Installation Globale
-```bash
-# Cloner le repo
-git clone https://github.com/HASSANHOUSSEINHOUMED/Open_Data.git
-cd Open_Data
-```
-
-### Exécuter TP1
+### TP1 - Exploration
 ```bash
 cd tp1-exploration
 jupyter notebook exploration.ipynb
 ```
+📖 [Voir README TP1](./tp1-exploration/README.md)
 
-### Exécuter TP2
+---
+
+### TP2 - Pipeline
 ```bash
 cd tp2-pipeline-bis
 uv sync
-uv run python -m pipeline.main
-# ou tests :
-uv run pytest tests/ -v
+uv run pytest tests/ -v      # Tests (9/9 ✅)
+uv run python -m pipeline.main   # Run pipeline
 ```
+📖 [Voir README TP2](./tp2-pipeline-bis/README.md)
 
-### Exécuter TP3
+---
+
+### TP3 - Dashboard Interactif
 ```bash
 cd tp3-app
 uv sync
 uv run streamlit run app_streamlit.py
-# Ouvre http://localhost:8501
 ```
+🔗 http://localhost:8501
+
+📖 [Voir README TP3](./tp3-app/README.md)
 
 ---
 
-## 📊 Technologies Utilisées Globalement
+### 🏛️ SafeCity - Projet en Équipe
+```bash
+cd safecity-app
+uv sync
+uv run streamlit run app.py
+```
+🔗 http://localhost:8501
 
-### Python Ecosystem
-- **Python 3.14**
-- **pandas** : Manipulation de données
-- **numpy** : Calculs numériques
-- **duckdb** : Requêtes SQL
+📖 [Voir README SafeCity](./safecity-app/README.md)
 
-### Data Engineering
-- **httpx** : Requêtes HTTP robustes
-- **tenacity** : Retry automatique
-- **pyarrow** : Stockage Parquet
-- **pydantic** : Validation de modèles
+---
 
-### Data Visualization
-- **Plotly** : Visualisations interactives
-- **Streamlit** : Applications data
+## 🎯 Projet SafeCity : La Synthèse
 
-### DevOps & Tests
-- **pytest** : Tests unitaires
-- **uv** : Gestionnaire de dépendances ultra-rapide
-- **jupyter** : Notebooks interactifs
+**Contexte** : Application d'analyse de criminalité en France (2020-2024)
 
-### APIs Open Data
-- **OpenMeteo** : Météo mondiale
-- **API Adresse** : Géocodage français
-- **data.gouv.fr** : Portail Open Data français
+**Équipe** (3 personnes) :
+- **Deep** - Data Engineer (Pipeline acquisition)
+- **Moustapha** - Data Visualizer (Plotly + Folium)
+- **Hassan** - IA & Interface (Streamlit + Claude)
+
+**Résultats** :
+- ✅ 3 APIs intégrées → 16,362 crimes + population + géographie
+- ✅ Dashboard complet : 4 visualisations + cartographie interactive
+- ✅ Chatbot IA répondant à des questions sur la criminalité
+- ✅ Interface Streamlit intuitive avec filtres dynamiques
+
+**Valeur ajoutée** :
+- Production-ready (Parquet, tests, documentation)
+- Open Data réels (Ministère Intérieur + INSEE + IGN)
+- IA intégrée de manière pertinente
+- Code modulaire et réutilisable
+
+---
+
+## 📚 Technologies Maîtrisées
+
+### Data
+- **Pandas, NumPy, DuckDB** - Manipulation
+- **Parquet, JSON, CSV** - Stockage
+
+### APIs & Integration
+- **OpenMeteo, API Adresse** - Données externes
+- **Anthropic, LiteLLM** - IA
+
+### Data Viz
+- **Plotly** - Graphiques interactifs
+- **Folium** - Cartographie
+- **Streamlit** - Applications web
+
+### Engineering
+- **pytest** - Tests automatisés
+- **uv** - Gestionnaire dépendances
+- **Git** - Versioning
+
+---
+
+## 📊 Progression Compétences
+
+| Compétence | TP1 | TP2 | TP3 | SafeCity |
+|-----------|-----|-----|-----|----------|
+| Open Data | ✅ | ✅ | ✅ | ✅ |
+| ETL/Pipeline | - | ✅ | ✅ | ✅ |
+| Visualisation | - | - | ✅ | ✅ |
+| IA/LLM | - | - | ✅ | ✅ |
+| Travail en équipe | - | - | - | ✅ |
+
+---
+
+## 📈 Résultats Clés
+
+| Métrique | TP2 | TP3 | SafeCity |
+|----------|-----|-----|----------|
+| Données | 3 villes | 1 source | 3 sources |
+| Tests | 9/9 ✅ | - | - |
+| Visualisations | - | 4 types | 4 types |
+| Chatbot | - | ✅ | ✅ |
+| Qualité code | A | - | Production-ready |
 
 ---
 
 ## 👤 Auteur
 
 **Hassan HOUSSEIN HOUMED**  
-Mastère 2 IA, Big Data & Dev - IPSSI Paris
-
-## 📄 Licence
-
-- **Données** : Licence Ouverte (ODbL)
-- **Code** : Libre d'utilisation pour fins éducatives
+Mastère 2 Big Data & AI - IPSSI Paris
 
 ---
 
-## 📞 Contact & Support
+## 📞 Contact
 
-Pour toute question ou amélioration :
-
-- 📧 Email : hassan.houssein.houmed@gmail.com
-
-- 🐙 GitHub : https://github.com/HASSANHOUSSEINHOUMED
+📧 hassan.houssein.houmed@gmail.com  
+🐙 https://github.com/HASSANHOUSSEINHOUMED
 
 ---
 
