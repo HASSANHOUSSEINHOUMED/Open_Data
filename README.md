@@ -1,10 +1,17 @@
-# 📊 Open Data - Travaux Pratiques & Projet en Équipe
+# 📊 Open Data - Mastère 2 Big Data & Intelligence Artificielle
 
-Parcours complet d'apprentissage en Data Engineering, Visualisation et IA appliqués à l'Open Data français.
+**Matière** : Open Data & IA  
+**Établissement** : IPSSI Paris  
+**Programme** : Mastère 2 Big Data & Intelligence Artificielle  
+**Période** : Décembre 2025
+
+Parcours complet d'apprentissage en Data Engineering, Visualisation et IA appliqués à l'exploitation des données publiques françaises.
 
 ---
 
 ## 🎓 Progression Pédagogique
+
+Cet espace regroupe tous les travaux pratiques et le projet de la matière **Open Data**, pilier du Mastère 2 couvrant l'acquisition, transformation et exploitation des données ouvertes.
 ```
 TP1: Exploration         TP2: Pipeline          TP3: Dashboard       PROJET: SafeCity
     ↓                       ↓                       ↓                     ↓
@@ -74,12 +81,14 @@ uv run streamlit run app.py
 
 ## 🎯 Projet SafeCity : La Synthèse
 
-**Contexte** : Application d'analyse de criminalité en France (2020-2024)
+**Contexte** : Application d'analyse de criminalité en France (2020-2024)  
+**Matière** : Open Data & IA (Mastère 2)  
+**Type** : Projet en équipe (3 personnes)
 
-**Équipe** (3 personnes) :
-- **Deep** - Data Engineer (Pipeline acquisition)
-- **Moustapha** - Data Visualizer (Plotly + Folium)
-- **Hassan** - IA & Interface (Streamlit + Claude)
+**Équipe** :
+- **Deep KALYAN** - Data Engineer (Pipeline acquisition)
+- **Moustapha ABDI ALI** - Data Visualizer (Plotly + Folium)
+- **Hassan HOUSSEIN HOUMED** - IA & Interface (Streamlit + Claude)
 
 **Résultats** :
 - ✅ 3 APIs intégrées → 16,362 crimes + population + géographie
@@ -97,35 +106,41 @@ uv run streamlit run app.py
 
 ## 📚 Technologies Maîtrisées
 
-### Data
-- **Pandas, NumPy, DuckDB** - Manipulation
-- **Parquet, JSON, CSV** - Stockage
+### Data Engineering
+- **Pandas, NumPy, DuckDB** - Manipulation de données
+- **Parquet, JSON, CSV** - Formats de stockage
+- **ETL/Pipeline** - Acquisition et transformation
 
-### APIs & Integration
-- **OpenMeteo, API Adresse** - Données externes
-- **Anthropic, LiteLLM** - IA
+### APIs & Intégration Open Data
+- **OpenMeteo** - Données météo (TP2)
+- **API Adresse** - Géocodage français (TP2)
+- **Ministère Intérieur** - Crimes & délits (SafeCity)
+- **INSEE** - Population & statistiques (SafeCity)
+- **IGN** - Contours géographiques (SafeCity)
 
-### Data Viz
+### Visualisation & IA
 - **Plotly** - Graphiques interactifs
-- **Folium** - Cartographie
-- **Streamlit** - Applications web
+- **Folium** - Cartographie web
+- **Streamlit** - Applications data
+- **Claude Sonnet (Anthropic)** - Chatbot IA
 
-### Engineering
-- **pytest** - Tests automatisés
-- **uv** - Gestionnaire dépendances
-- **Git** - Versioning
+### Engineering & Qualité
+- **pytest** - Tests automatisés (9/9 ✅)
+- **uv** - Gestionnaire de dépendances
+- **Git** - Versioning et collaboration
 
 ---
 
-## 📊 Progression Compétences
+## 📊 Progression Compétences - Mastère 2
 
 | Compétence | TP1 | TP2 | TP3 | SafeCity |
 |-----------|-----|-----|-----|----------|
-| Open Data | ✅ | ✅ | ✅ | ✅ |
-| ETL/Pipeline | - | ✅ | ✅ | ✅ |
-| Visualisation | - | - | ✅ | ✅ |
-| IA/LLM | - | - | ✅ | ✅ |
-| Travail en équipe | - | - | - | ✅ |
+| **Open Data** | ✅ | ✅ | ✅ | ✅ |
+| **ETL/Pipeline** | - | ✅ | ✅ | ✅ |
+| **Visualisation** | - | - | ✅ | ✅ |
+| **IA/LLM** | - | - | ✅ | ✅ |
+| **Travail en équipe** | - | - | - | ✅ |
+| **Data Engineering** | - | ✅ | ✅ | ✅ |
 
 ---
 
@@ -144,15 +159,19 @@ uv run streamlit run app.py
 ## 👤 Auteur
 
 **Hassan HOUSSEIN HOUMED**  
-Mastère 2 Big Data & AI - IPSSI Paris
-
----
-
-## 📞 Contact
-
+📚 Mastère 2 Big Data & Intelligence Artificielle - IPSSI Paris  
 📧 hassan.houssein.houmed@gmail.com  
 🐙 https://github.com/HASSANHOUSSEINHOUMED
 
 ---
 
-**Dernière mise à jour** : Décembre 2025
+## 📞 Contact & Support
+
+Pour toute question sur les projets ou la matière Open Data :
+- 📧 hassan.houssein.houmed@gmail.com
+- 🐙 GitHub : https://github.com/HASSANHOUSSEINHOUMED
+
+---
+
+**Dernière mise à jour** : Décembre 2025  
+**Matière** : Open Data & IA - Mastère 2 Big Data & AI
